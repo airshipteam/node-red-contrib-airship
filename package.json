@@ -1,0 +1,23 @@
+{
+  "name": "node-red-contrib-airship",
+  "version": "0.0.2",
+  "description": "Airship node red library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "airship-ticketco-get-events": "services/airship-ticketco-get-events/airship-ticketco-get-events.js",
+      "airship-ticketco-get-item-grosses": "services/airship-ticketco-get-item-grosses/airship-ticketco-get-item-grosses.js",
+      "airship-soap-create-contact": "soap/airship-soap-create-contact/airship-soap-create-contact.js",
+      "airship-soap-create-booking": "soap/airship-soap-create-booking/airship-soap-create-booking.js"
+    }
+  },
+  "author": "Julian Cole",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "moment": "^2.27.0",
+    "soap": "^0.11.4"
+  }
+}

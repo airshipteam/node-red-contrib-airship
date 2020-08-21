@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Create Booking', {
+        category: "Airship SOAP",
+        icon: "icons/airship.svg",
+        color: '#F8665A',
+        inputs: 1,
+        outputs: 2,
+        outputLabels:['success','error'],
+        defaults: {
+            name: { value: "" }
+        },
+        label: function () {
+            return this.name || "Create Booking"
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Create Booking">
+    
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+   
+</script>
+
+<script type="text/x-red" data-help-name="Create Booking">
+    <p>Node-red nodesthat allow users to send SOAP request to Airship createBooking method.</p>
+</script>
